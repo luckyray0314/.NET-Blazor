@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+    <Deterministic>false</Deterministic>
+    <AssemblyVersion>1.0.*</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Configurations>Debug;Release;EasyTest</Configurations>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Model.DesignedDiffs.xafml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.ExpressApp" Version="24.1.3" />
+    <PackageReference Include="DevExpress.ExpressApp.CodeAnalysis" Version="24.1.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="DevExpress.ExpressApp.ConditionalAppearance" Version="24.1.3" />
+    <PackageReference Include="DevExpress.ExpressApp.MultiTenancy.XPO" Version="24.1.3" />
+    <PackageReference Include="DevExpress.ExpressApp.Objects" Version="24.1.3" />
+    <PackageReference Include="DevExpress.ExpressApp.Security.Xpo" Version="24.1.3" />
+    <PackageReference Include="DevExpress.ExpressApp.Validation" Version="24.1.3" />
+    <PackageReference Include="DevExpress.ExpressApp.Xpo" Version="24.1.3" />
+    <PackageReference Include="DevExpress.Persistent.Base" Version="24.1.3" />
+    <PackageReference Include="DevExpress.Persistent.BaseImpl.Xpo" Version="24.1.3" />
+  </ItemGroup>
+</Project>
